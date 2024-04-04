@@ -103,9 +103,9 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 /*============ MENU SHOW Y  HIDDEN ==============*/
-ScrollReveal().reveal('.home-title1, .portfolio-description, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'right' });
+ScrollReveal().reveal('.home-title1, .portfolio-description, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'top' });
 ScrollReveal().reveal('.button, .btn, .service, .home, .home-image, .about .about-border, .portfolio-img, .contact', { delay: 600, origin:'bottom' });
-ScrollReveal().reveal('.pro, .service-title, .home-content, .home-description, .portfolio-title, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'left' });
+ScrollReveal().reveal('.pro, .service-title, .home-content, .home-description, .portfolio-title, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'top' });
 ScrollReveal().reveal('.home-sci', { delay: 500, origin:'bottom'});
 ScrollReveal().reveal('.project, .about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
-ScrollReveal().reveal('.service-container .service-content, .testimonial-content', { delay: 700, origin:'bottom', interval: 200 });
+ScrollReveal().reveal('.service-container .service-content', { delay: 700, origin:'bottom', interval: 200 });
