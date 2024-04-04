@@ -389,14 +389,14 @@ body{
     cursor: pointer;
     color: #B517FF;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 .services-button:hover{
     transform: translateX(.25rem);
 }
 .service-container{
-    gap: 20px;
+    gap: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
