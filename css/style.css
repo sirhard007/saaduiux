@@ -228,6 +228,21 @@ body{
 .project{
     padding: 50px 20px;
 }
+.project1{
+    padding: 50px 20px;
+}
+.project-pictures img{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.project-headings{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 .portfolio-content img{
     width: 100%;
     border-radius: 10px;
@@ -621,6 +636,11 @@ li{
     font-size: 18px;
     color: #f1f1f1;
 }
+.error-txt{
+    font-size: 12px;
+    color: #FDC898;
+    display: none;
+}
 
 .contact-form{
     width: 100%;
@@ -629,8 +649,22 @@ li{
     background: linear-gradient(90deg, #FDC898, #B517FF);
     padding: 15px 15px;
     border-radius: 50px;
+    box-shadow: 0 0 4px #FDC898;
     color: #fff;
-    
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    gap: 20px;
+    transition: .5s;
+    width: 150px;
+}
+.button-icon{
+    padding-left: 10px;
+}
+.contact-button:hover{
+    background: #FDC898;
+    box-shadow: none;
 }
 
 /* ============ FOOTER ========== */
@@ -809,7 +843,7 @@ li{
         grid-template-columns: repeat(2, 1fr);
     }
     .footer-links{
-        flex-direction: column;
+        flex-direction: row;
     }
     .about-img{
         width: 505px;

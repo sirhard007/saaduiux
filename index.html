@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav__link">
+              <a href="about.html" class="nav__link">
                 <i class="uil uil-user nav-icon"></i> About Me
               </a>
             </li>
@@ -146,7 +146,7 @@
                   to empower individuals in their pursuit of tech-related
                   skills.
                 </p>
-                <a href="#" class="button">Read Case Study</a>
+                <a href="project1.html" class="button">Read Case Study</a>
               </div>
             </div>
             <!--==============PORTFOLIO 2============-->
@@ -565,34 +565,35 @@
             <div class="contact-inputs grid">
               <div class="contact-content">
                 <label for="" class="contact-label">Name</label>
-                <input type="text" class="contact-input" />
+                <input type="text" class="contact-input" id="name" />
+                <div class="error-txt">Name can't be blank</div>
               </div>
               <div class="contact-content">
                 <label for="" class="contact-label">Email</label>
-                <input type="email" class="contact-input" />
+                <input type="email" class="contact-input" id="email" />
+                <div class="error-txt">Email can't be blank</div>
               </div>
             </div>
             <div class="contact-content">
               <label for="" class="contact-label">Subject</label>
-              <input type="text" class="contact-input" />
+              <input type="text" class="contact-input" id="Subject" />
+              <div class="error-txt">Subject can't be blank</div>
             </div>
             <div class="contact-content">
               <label for="" class="contact-label">Message</label>
               <textarea
                 name=""
-                id=""
+                id="message"
                 cols="0"
                 rows="7"
                 class="contact-input"
               ></textarea>
+              <div class="error-txt">Message can't be blank</div>
             </div>
 
-            <div>
-              <a href="#" class="contact-button"
-                >Send Message
-                <i class="uil uil-message button-icon"></i>
-              </a>
-            </div>
+            <button type="submit" class="contact-button">
+              Send<i class="uil uil-message button-icon"></i>
+            </button>
           </form>
         </div>
       </section>
@@ -647,6 +648,9 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup-icon"></i>
     </a>
+    <!--animation-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--animation-->
 

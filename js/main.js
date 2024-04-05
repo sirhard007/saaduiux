@@ -109,3 +109,39 @@ ScrollReveal().reveal('.pro, .service-title, .home-content, .home-description, .
 ScrollReveal().reveal('.home-sci', { delay: 500, origin:'bottom'});
 ScrollReveal().reveal('.project, .about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
 ScrollReveal().reveal('.service-container', { delay: 700, origin:'bottom' });
+
+
+/*============ CONTACT FORM ==============*/
+/*const form = document.querySelector("form");
+const fullName = document.getElementById("name")
+const email = document.getElementById("email")
+const subject = document.getElementById("subject")
+const mess = document.getElementById("message")
+function sendEmail() {
+    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value}`;
+    Email.send({
+        Host : "smtp.email.com",
+        Username : "saadadam009@gmail.com",
+        Password : "98F8EA0A08399CAB041416C7E13310126A66",
+        To : 'saadadam009@gmail.com',
+        From : "saadadam009@gmail.com",
+        Subject : subject.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if (message == "OK") {
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully",
+                icon: "success"
+              });
+        }
+      }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail()
+});*/
