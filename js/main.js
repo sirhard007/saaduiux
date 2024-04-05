@@ -104,15 +104,18 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 /*============ MENU SHOW Y  HIDDEN ==============*/
 ScrollReveal().reveal('.home-title1, .portfolio-description, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'top' });
-ScrollReveal().reveal('.button, .btn, .service, .home, .home-image, .about .about-border, .portfolio-img, .contact', { delay: 600, origin:'bottom' });
+ScrollReveal().reveal('.button, .btn, .service, .home, .home-image, .about .about-border, .portfolio-img, .contact,.project-headings', { delay: 600, origin:'bottom' });
 ScrollReveal().reveal('.pro, .service-title, .home-content, .home-description, .portfolio-title, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'top' });
 ScrollReveal().reveal('.home-sci', { delay: 500, origin:'bottom'});
 ScrollReveal().reveal('.project, .about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
 ScrollReveal().reveal('.service-container', { delay: 700, origin:'bottom' });
+ScrollReveal().reveal('.project1', { delay: 600, origin:'top'});
+ScrollReveal().reveal('.project-pictures img', { delay: 600, origin:'top', interval: 200});
+ScrollReveal().reveal('.video', { delay: 600, origin:'top'});
 
 
 /*============ CONTACT FORM ==============*/
-/*const form = document.querySelector("form");
+const form = document.querySelector("form");
 const fullName = document.getElementById("name")
 const email = document.getElementById("email")
 const subject = document.getElementById("subject")
@@ -144,4 +147,4 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     sendEmail()
-});*/
+});

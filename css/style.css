@@ -227,15 +227,24 @@ body{
 /* ============ PROJECT========== */
 .project{
     padding: 50px 20px;
+    min-height: 100vh;
 }
 .project1{
     padding: 50px 20px;
+}
+.project-pictures{
+    margin-top: 150px;
 }
 .project-pictures img{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+video{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 .project-headings{
     font-size: 25px;
@@ -280,9 +289,7 @@ body{
 }
 .button:hover{
     background: linear-gradient(90deg, #FDC898, #B517FF);
-    opacity: 0;
-    animation: slideRight 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 1.8s;
+    transition: .5s;
 }
 /* ============ ABOUT ========== */
 .about{
@@ -330,7 +337,8 @@ body{
 }
 .about-info{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
     margin-bottom: 20px;
     
 }
@@ -371,7 +379,7 @@ body{
 }
 /* ============ SERVICE ========== */
 .service{
-    padding: 50px 20px;
+    padding: 70px 20px;
 }
 .service-title{
     display: flex;
@@ -920,14 +928,14 @@ li{
     width: 380px;
 }
 .about-me{
-    font-size: 30px;
+    font-size: 35px;
     text-align: left;
    
 }
 .about-description{
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.4;
    
 }
 .about-button{
@@ -936,6 +944,9 @@ li{
 .about-info-name{
     font-size: 14px;
 }
+.about-info{
+justify-content: left;
+
 .service-title{
     font-size: 20px;
 }
@@ -968,14 +979,20 @@ li{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 300px;
 }
+.project-headings{
+    font-size: 35px;
+   margin-bottom: 40px;
+    margin-top: 20px;
+}
+}
     
 }
 @media only screen and (min-width: 980px){
     .home{
-        margin-top: 100px;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        margin-top: 80px;
     }
     .home__container{
         padding-top: 140px;
@@ -1022,6 +1039,15 @@ li{
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 2.1s;
+    }
+    .project1{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .project-headings{
+        font-size: 45px;
+       margin-bottom: 50px;
+        margin-top: 30px;
     }
      
 }

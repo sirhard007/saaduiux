@@ -95,6 +95,10 @@
       <div class="project-pictures">
         <img src="./assets/mockup.png" alt="" />
         <img src="./assets/mockup-1.png" alt="" />
+        <video class="video" controls>
+          <source src="./assets/edusync prototyping.mp4" type="video/mp4" />
+          Your browser does not support mp4 videos, change browser!
+        </video>
         <img src="./assets/mockup-2.png" alt="" />
         <img src="./assets/Our Process.png" alt="" />
         <img src="./assets/mockup-3.png" alt="" />
@@ -159,5 +163,31 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup-icon"></i>
     </a>
+    <!--animation-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Saad.", "Adam."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
