@@ -142,15 +142,15 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 /*============ MENU SHOW Y  HIDDEN ==============*/
-ScrollReveal().reveal('.home-title1, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'top' });
-ScrollReveal().reveal('.btn, .service, .home, .home-image, .about .about-border, .contact, .home-description', { delay: 600, origin:'bottom' });
-ScrollReveal().reveal('.service-title, .home-content, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'top' });
-ScrollReveal().reveal('.home-sci, .project-pictures', { delay: 500, origin:'bottom'});
-ScrollReveal().reveal('.about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
-ScrollReveal().reveal('.service-container', { delay: 700, origin:'bottom' });
-ScrollReveal().reveal('.pro, .project1', { delay: 600, origin:'top'});
-ScrollReveal().reveal('.portfolio__nav, .project, .portfolio__content, .project-headings', { delay: 600, origin:'bottom'});
-ScrollReveal().reveal('.video', { delay: 600, origin:'top'});
+ScrollReveal().reveal('.home-title1, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 300, origin:'top' });
+ScrollReveal().reveal('.btn, .service, .home, .home-image, .about .about-border, .contact, .home-description', { delay: 400, origin:'bottom' });
+ScrollReveal().reveal('.service-title, .home-content, .about-heading, .testimonial-title, .contact-title', { delay: 300, origin:'top' });
+ScrollReveal().reveal('.home-sci, .project-pictures', { delay: 300, origin:'bottom'});
+ScrollReveal().reveal('.about-data, .testimonial, .contact-information', { delay: 300, origin:'top'});
+ScrollReveal().reveal('.service-container', { delay: 300, origin:'bottom' });
+ScrollReveal().reveal('.pro, .project1', { delay: 400, origin:'top'});
+ScrollReveal().reveal('.portfolio__nav, .project, .portfolio__content, .project-headings', { delay: 400, origin:'bottom'});
+ScrollReveal().reveal('.video', { delay: 300, origin:'top'});
 
 
 /*============ CONTACT FORM ==============*/
