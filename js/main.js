@@ -71,7 +71,7 @@ modalCloses.forEach((modalClose) =>{
 })
 
 /*============ ACCORDION SKILLS ==============*/
-const skillsContent = document.getElementsByClassName('.skills__content');
+/*const skillsContent = document.getElementsByClassName('.skills__content');
       skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
@@ -87,7 +87,7 @@ function toggleSkills(){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
+})*/
 
 /*============ TESTIMONIALS ==============*/
 var swiper = new Swiper(".mySwiper", {
@@ -154,7 +154,7 @@ ScrollReveal().reveal('.video', { delay: 600, origin:'top'});
 
 
 /*============ CONTACT FORM ==============*/
-const form = document.querySelector("form");
+/*const form = document.querySelector("form");
 const fullName = document.getElementById("name")
 const email = document.getElementById("email")
 const subject = document.getElementById("subject")
@@ -186,4 +186,4 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     sendEmail()
-});
+});*/

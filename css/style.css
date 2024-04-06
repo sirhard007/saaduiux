@@ -1084,6 +1084,9 @@ justify-content: left;
        margin-bottom: 50px;
         margin-top: 30px;
     }
+    .skills__container{
+    
+    }
      
 }
 
@@ -1278,12 +1281,12 @@ justify-content: left;
     width: 50%;
 }
 .skills__close .skills__list{
-    height: 0;
     overflow: hidden;
+    margin-bottom: 2.5rem;
 }
 .skills__open .skills__list{
     height: max-content;
     margin-bottom: 2.5rem;
 }.skills__open .skills__arrow{
-    transform: rotate(-180deg);
+    
 }
