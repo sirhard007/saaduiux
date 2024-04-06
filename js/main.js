@@ -27,7 +27,26 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-/*============ MENU SHOW Y  HIDDEN ==============*/
+/*============ Mixitup ==============*/
+const mixer = mixitup('.project__container', {
+    selectors: {
+        target: '.portfolio__content'
+    },
+    animation: {
+        duration: 400
+    }
+});
+/*============ Mixitup ==============*/
+const linkPortfolio = document.querySelectorAll('.portfolio__item')
+
+function activePortfolio(){
+    if(linkPortfolio){
+        linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
+        this.classList.add('active-portfolio')
+    }
+}
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
+
 /*========== SERVICES MODAL ========== */
 const modalViews = document.querySelectorAll('.services-modal'),
       modalBtns = document.querySelectorAll('.services-button'),
@@ -103,14 +122,14 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 /*============ MENU SHOW Y  HIDDEN ==============*/
-ScrollReveal().reveal('.home-title1, .portfolio-description, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'top' });
-ScrollReveal().reveal('.button, .btn, .service, .home, .home-image, .about .about-border, .portfolio-img, .contact,.project-headings', { delay: 600, origin:'bottom' });
-ScrollReveal().reveal('.pro, .service-title, .home-content, .home-description, .portfolio-title, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'top' });
-ScrollReveal().reveal('.home-sci', { delay: 500, origin:'bottom'});
-ScrollReveal().reveal('.project, .about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
+ScrollReveal().reveal('.home-title1, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 500, origin:'top' });
+ScrollReveal().reveal('.btn, .service, .home, .home-image, .about .about-border, .contact, .home-description', { delay: 600, origin:'bottom' });
+ScrollReveal().reveal('.service-title, .home-content, .about-heading, .testimonial-title, .contact-title', { delay: 600, origin:'top' });
+ScrollReveal().reveal('.home-sci, .project-pictures', { delay: 500, origin:'bottom'});
+ScrollReveal().reveal('.about-data, .testimonial, .contact-information', { delay: 500, origin:'top'});
 ScrollReveal().reveal('.service-container', { delay: 700, origin:'bottom' });
-ScrollReveal().reveal('.project1', { delay: 600, origin:'top'});
-ScrollReveal().reveal('.project-pictures img', { delay: 600, origin:'top', interval: 200});
+ScrollReveal().reveal('.pro, .project1', { delay: 600, origin:'top'});
+ScrollReveal().reveal('.portfolio__nav, .project, .portfolio__content, .project-headings', { delay: 600, origin:'bottom'});
 ScrollReveal().reveal('.video', { delay: 600, origin:'top'});
 
 

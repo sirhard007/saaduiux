@@ -94,13 +94,12 @@
       <!--============ HOME ==========-->
       <section class="home" id="home">
         <div class="home__container container grid">
+          <h3 class="home-title1">HI, I'm Saad Adam</h3>
           <div class="home-content">
             <h1 class="home-title">
-              Hello,
               <span class="auto-type"></span>
             </h1>
           </div>
-          <h3 class="home-title1">UI/UX Designer</h3>
           <p class="home-description">
             As a passionate UI/UX designer and web developer, I specialize in
             crafting memorable digital experiences that seamlessly blend form
@@ -133,10 +132,17 @@
       <!--============ PROJECT ==========-->
       <section class="project" id="project">
         <h2 class="pro">My Projects</h2>
-        <div class="project-container">
+        <div class="portfolio__nav">
+          <span class="portfolio__item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+          <span class="portfolio__item" data-filter=".web">Web</span>
+        </div>
+        <div class="project__container">
           <div>
             <!--==============PORTFOLIO 1============-->
-            <div class="portfolio-content grid">
+            <div class="portfolio__content grid mix ux">
               <img src="./assets/mockup.png" alt="" class="portfolio-img" />
 
               <div class="portfolio-data">
@@ -149,8 +155,24 @@
                 <a href="project1.html" class="button">Read Case Study</a>
               </div>
             </div>
+            <!--==============PORTFOLIO 32============-->
+            <div class="portfolio__content grid mix web">
+              <img src="./assets/Frame 119.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Personal Responsive Portfolio</h3>
+                <p class="portfolio-description">
+                  Welcome to my personal portfolio, a curated collection of my
+                  creative endeavors, innovative projects, and unique insights.
+                  Within these pages, you'll discover a reflection of my
+                  journey, passions, and the diverse skills I bring to the
+                  table.
+                </p>
+                <a href="#" class="button">Visit Site</a>
+              </div>
+            </div>
             <!--==============PORTFOLIO 2============-->
-            <div class="portfolio-content grid">
+            <div class="portfolio__content grid mix web">
               <img src="./assets/Frame 29 1.png" alt="" class="portfolio-img" />
 
               <div class="portfolio-data">
@@ -162,11 +184,11 @@
                   trip, or a family vacation, we've got you covered with our
                   extensive fleet of vehicles and easy booking process.
                 </p>
-                <a href="project2.html" class="button">Veiw Shots</a>
+                <a href="project2.html" class="button">Veiw site 80% Done</a>
               </div>
             </div>
             <!--==============PORTFOLIO 3============-->
-            <div class="portfolio-content grid">
+            <div class="portfolio__content grid mix ux">
               <img
                 src="./assets/Frame 29 1-1.png"
                 alt=""
@@ -182,11 +204,26 @@
                   convenient solution for users to satisfy their cravings from
                   the comfort of their homes.
                 </p>
-                <a href="#" class="button">View Shots</a>
+                <a href="./project3.html" class="button">View Shots</a>
+              </div>
+            </div>
+            <!--==============PORTFOLIO 31============-->
+            <div class="portfolio__content grid mix web">
+              <img src="./assets/Frame 119.png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">EduSync Landing Page</h3>
+                <p class="portfolio-description">
+                  Made this responsive landing page for EduSync E-Learning App
+                  to democratize access to quality tech education, fostering a
+                  community of lifelong learners who are equipped to thrive in
+                  the dynamic landscape of the tech industry.
+                </p>
+                <a href="#" class="button">Visit Site</a>
               </div>
             </div>
             <!--==============PORTFOLIO 4============-->
-            <div class="portfolio-content grid">
+            <div class="portfolio__content grid mix ux">
               <img src="./assets/Frame 29.png" alt="" class="portfolio-img" />
 
               <div class="portfolio-data">
@@ -195,11 +232,11 @@
                   Pocketpal is a revolutionary budgeting and finance app to
                   empower users to take control of their financial well-being
                 </p>
-                <a href="#" class="button">View Shots</a>
+                <a href="project4.html" class="button">View Shots</a>
               </div>
             </div>
             <!--==============PORTFOLIO 5============-->
-            <div class="portfolio-content grid">
+            <div class="portfolio__content grid mix ux">
               <img src="./assets/Frame 4.png" alt="" class="portfolio-img" />
 
               <div class="portfolio-data">
@@ -211,7 +248,7 @@
                   enjoyable, empowering you to express your unique style with
                   confidence.
                 </p>
-                <a href="#" class="button">View Shots</a>
+                <a href="project5.html" class="button">View Shots</a>
               </div>
             </div>
           </div>
@@ -642,6 +679,10 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup-icon"></i>
     </a>
+
+    <!--MIXITUP FILTER-->
+    <script src="./js/mixitup.min.js"></script>
+
     <!--animation-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -666,9 +707,9 @@
 
     <script>
       var typed = new Typed(".auto-type", {
-        strings: ["Saad.", "Adam."],
-        typeSpeed: 150,
-        backSpeed: 150,
+        strings: ["UI/UX Designer", "Frontend Developer", "Web Developer"],
+        typeSpeed: 50,
+        backSpeed: 50,
         loop: true,
       });
     </script>

@@ -130,10 +130,12 @@ body{
     margin-top: 50px;
 }
 .home-title{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 0;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    color: transparent;
+    -webkit-text-stroke: .7px #fff;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .7s;
@@ -141,10 +143,9 @@ body{
 .home-title1{
     font-size: 25px;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px #fff;
+    color: #fff;
     line-height: 0;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
    
 }
 .home-description{
@@ -229,21 +230,53 @@ body{
     padding: 50px 20px;
     min-height: 100vh;
 }
+.active-portfolio{
+    color: #FDC898;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 2px;
+    transition: .5s;
+
+}
+.portfolio__nav{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: transparent;
+   
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.portfolio__item{
+    margin: 0 20px;
+    cursor: pointer;
+}
 .project1{
     padding: 50px 20px;
 }
+.project-explain{
+    max-width: 950px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.project-goals{
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 20px;
+}
 .project-pictures{
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .project-pictures img{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
-    margin-bottom: 30px;
 }
 video{
     width: 100%;
-    margin-bottom: 30px;
     border-radius: 10px;
 }
 .project-headings{
@@ -252,7 +285,7 @@ video{
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.portfolio-content img{
+.portfolio__content img{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
@@ -260,8 +293,9 @@ video{
 }
 .project h2{
     font-size: 25px;
+    text-align: center;
 }
-.portfolio-content{
+.portfolio__content{
     padding: 20px 0;
 }
 .portfolio-title {
@@ -897,6 +931,7 @@ li{
     font-size: 45px;
     line-height: 0;
     padding-bottom: 20px;
+    padding-top: 30px;
 }
 .home-title1{
     font-size: 35px;
@@ -946,7 +981,7 @@ li{
 }
 .about-info{
 justify-content: left;
-
+}
 .service-title{
     font-size: 20px;
 }
