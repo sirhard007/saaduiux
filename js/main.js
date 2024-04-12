@@ -142,48 +142,48 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 /*============ MENU SHOW Y  HIDDEN ==============*/
-ScrollReveal().reveal('.home-title1, .about-button, .subtitle, .testimonial-sub, .contact-sub', { delay: 300, origin:'top' });
-ScrollReveal().reveal('.btn, .service, .home, .home-image, .about .about-border, .contact, .home-description', { delay: 400, origin:'bottom' });
-ScrollReveal().reveal('.service-title, .home-content, .about-heading, .testimonial-title, .contact-title', { delay: 300, origin:'top' });
-ScrollReveal().reveal('.home-sci, .project-pictures', { delay: 300, origin:'bottom'});
-ScrollReveal().reveal('.about-data, .testimonial, .contact-information', { delay: 300, origin:'top'});
-ScrollReveal().reveal('.service-container', { delay: 300, origin:'bottom' });
-ScrollReveal().reveal('.pro, .project1', { delay: 400, origin:'top'});
-ScrollReveal().reveal('.portfolio__nav, .project, .portfolio__content, .project-headings', { delay: 400, origin:'bottom'});
-ScrollReveal().reveal('.video', { delay: 300, origin:'top'});
 
 
 /*============ CONTACT FORM ==============*/
-/*const form = document.querySelector("form");
-const fullName = document.getElementById("name")
-const email = document.getElementById("email")
-const subject = document.getElementById("subject")
-const mess = document.getElementById("message")
-function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Message: ${mess.value}`;
+const fname =document.getElementById('fname');
+const email =document.getElementById('email');
+const subject =document.getElementById('subject');
+const message =document.getElementById('message');
+const submit =document.getElementsByClassName('contact-form')[0];
+
+submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log("clicked");
+    
+
+    let ebody = `
+    <b>Name: </b>${fname.value}
+    <br>
+    <b>Email: </b>${email.value}
+    <br>
+    <b>Message: </b>${message.value}
+    <br>
+    
+    `
+
+    
+
+
     Email.send({
-        Host : "smtp.email.com",
-        Username : "saadadam009@gmail.com",
-        Password : "98F8EA0A08399CAB041416C7E13310126A66",
+        SecureToken : "5c09bc0c-c748-4297-a886-92cda6a158c4",
         To : 'saadadam009@gmail.com',
         From : "saadadam009@gmail.com",
-        Subject : subject.value,
-        Body : bodyMessage
+        Subject :  subject.value,
+        Body : ebody
     }).then(
-      message => {
-        if (message == "OK") {
-            Swal.fire({
-                title: "Success!",
-                text: "Message sent successfully",
-                icon: "success"
-              });
-        }
-      }
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully",
+                    icon: "success"
+                  });
+            }
+          }
     );
-}
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail()
-});*/
+})

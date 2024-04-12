@@ -757,9 +757,9 @@ li{
     margin-top: 50px;
 }
 
-/* scrollup */
+/* scroll-up */
 
-.scrollup{
+.scroll-up{
     position: fixed;
     right: 1rem;
     bottom: -20%;
@@ -770,7 +770,7 @@ li{
     transition: .4s;
 
 }
-.scrollup:hover{
+.scroll-up:hover{
     background: #8a8a8a;
 }
 .scrollup-icon{
@@ -1284,6 +1284,4 @@ justify-content: left;
 .skills__open .skills__list{
     height: max-content;
     margin-bottom: 2.5rem;
-}.skills__open .skills__arrow{
-    
 }
