@@ -192,7 +192,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    color: #B517FF;
+    color: #f83bb085;
 }
 .home-icons:hover{
     background: linear-gradient(45deg, #FDC898, #B517FF);
@@ -215,7 +215,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    color: #B517FF;
+    color: #f83bb085;
 }
 .home-icond:hover{
     background: linear-gradient(45deg, #FDC898, #B517FF);
