@@ -345,7 +345,7 @@ video{
     transition: .5s;
     opacity: 0;
     animation: slideRight 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 1.5s;
+    animation-delay: 0s;
 }
 /* ============ ABOUT ========== */
 .about{
